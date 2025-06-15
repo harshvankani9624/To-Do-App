@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #B0D7ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Container */
+.Container{
+    height: 89%;
+    width: 85%;
+    border: 3px solid #55A1E0;
+    border-radius: 15px;
+    background-color: #EAF5FC;
+}
+
+
+/* App-Heading */
+.App-Heading{
+    height: 15%;
+    width: 100%;
+    font-size: 35px;
+    font-weight: 4400;
+    color:#053582;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+
+/* Add-Task */
+.Add-Task{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    height: 50px;
+    width: 250px;
+    font-size: 17px;
+    background-color: #FFFEFF;
+    border: 2px solid #93C8E9;
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+    margin: 0 10px 0 10px;
+}
+
+.save-btn{
+    height: 50px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 650;
+    color: white;
+    background-color: #1266F1;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px 0 10px;    
+}
+
+.save-btn:active{
+    box-shadow: 0.5px 0.5px 0.5px rgb(158, 145, 145);
+}
+
+
+
+/* Task-Information */
+.Task-Detail{
+    width: 90%;
+    height: 70%;
+    overflow: auto;
+    scrollbar-width: none;
+    padding: 1%;
+    margin: auto;
+}
+
+.Task{
+    height: 100px;
+    width: 70%;
+    background-color: #FFFEFF;
+    border: 3px solid #A6D2ED;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.taskFirst{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.taskState{
+    color: rgb(159, 32, 32);
+}
+
+.taskDelete{
+    font-size: 20px;
+    color: rgb(207, 56, 56);
+    background-color: transparent;
+    border: none;
+}
+
+.taskDelete:active{
+    text-shadow: 1px 1px 1px black;
+}
+
+
+@media(max-width:1100px){
+    .Container{
+        width: 90%;
+    }
+    .Task{
+        width: 90%;
+    }
+}
+
+@media(max-width:800px){
+    .Container{
+        width: 95%;
+    }
+    .Task{
+        width: 99%;
+    }
+}
+
+@media(max-width:600px){
+    .Container{
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+    }
+    .Add-Task{
+        flex-direction: column;
+    }
+    .input{
+        margin-bottom: 10px;
+    }
+    .save-btn{
+        margin-bottom: 20px;
+    }
+    .Task{
+        height: 130px;
+        flex-direction: column;
+    }
+}
